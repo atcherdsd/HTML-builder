@@ -9,7 +9,7 @@ const copyDir = (sourceDir, destinationDir) => {
   
   fs.mkdir(destinationDir, { recursive: true }, err => {
     if (err) throw err;
-  });
+  }); // создание директории
 
   fs.readdir(destinationDir, (err, files) => {
     if (err) throw err;
